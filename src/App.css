@@ -168,11 +168,14 @@ nav ul li a:hover { color: #666; }
 
 .sp,
 .sa,
+.ps,
 .posts .wrapper > h2,
+.photos .wrapper > h2,
 .comments .wrapper > h2,
 .albums .wrapper > h2 { margin-top: 50px; }
 
 .post-list,
+.photo-list,
 .comment-list,
 .album-list {
   display: flex;
@@ -183,9 +186,11 @@ nav ul li a:hover { color: #666; }
 }
 
 .post-list li,
+.photo-list li,
 .comment-list li,
 .album-list li,
 .singlePost,
+.singlePhoto,
 .singleComment,
 .singleAlbum {
   width: 28%;
@@ -199,6 +204,7 @@ nav ul li a:hover { color: #666; }
 }
 
 .singlePost,
+.singlePhoto,
 .singleComment,
 .singleAlbum {
   width: 40%;
@@ -209,14 +215,16 @@ nav ul li a:hover { color: #666; }
 }
 
 .post-list li p,
+.photo-list li p,
 .comment-list li p,
 .album-list li p,
-.singlePost p,
+.singlePhoto p,
 .singlePost h2,
 .singleComment p,
 .singleComment h2 { margin-bottom: 10px; }
 
 .post-list strong,
+.photo-list strong,
 .comment-list strong,
 .album-list strong {
   margin-right: 5px;
@@ -224,9 +232,11 @@ nav ul li a:hover { color: #666; }
 }
 
 .post-list li a,
+.photo-list li a,
 .comment-list li a,
 .album-list li a,
 .singlePost button,
+.singlePhoto button,
 .singleComment button,
 .singleAlbum button {
   padding: 10px 12px;
@@ -242,11 +252,22 @@ nav ul li a:hover { color: #666; }
 }
 
 .post-list li a:hover,
+.photo-list li a:hover,
 .comment-list li a:hover,
 .album-list li a:hover,
 .singleComment button:hover,
 .singlePost button:hover,
+.singlePhoto button:hover,
 .singleAlbum button:hover { background-color: #6175ce; }
+
+.photo-list li figure,
+.singlePhoto figure {
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.photo-list li { height: auto; }
 
 
 /*=================================
