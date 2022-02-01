@@ -2,8 +2,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import CommonCards from './pages/CommonCards';
+import SingleCard from './pages/SingleCard';
 
-function App() {
+const App = () => {
   return (
     <Router>
       <div className="App">
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/:term" element={<CommonCards />} />
+          <Route path="/:term/:id" element={<SingleCard />} />
         </Routes>
       </div>
     </Router>
