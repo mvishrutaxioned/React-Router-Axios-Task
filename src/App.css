@@ -159,8 +159,65 @@ nav ul li a:hover { color: #666; }
   main styling starts here
 =================================*/
 
+.sc,
+.cards .wrapper {
+  margin: 40px auto;
+}
 
+.wrapper > h2 {
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 34px;
+}
 
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.card,
+.singleCard {
+  width: 28%;
+  min-height: 150px;
+  height: auto;
+  padding: 15px;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card figure,
+.singleCard figure {
+  margin-bottom: 15px;
+}
+
+.card p,
+.singleCard p {
+  margin-bottom: 8px;
+}
+
+.card a,
+.singleCard button {
+  padding: 10px 14px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #2948d3;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  outline: none;
+  transition: .5s ease;
+}
+
+.card a:hover,
+.singleCard button:hover {
+  background: #6175ce;
+}
 
 /*=================================
   main styling ends here

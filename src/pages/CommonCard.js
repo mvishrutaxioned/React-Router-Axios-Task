@@ -6,7 +6,7 @@ const Card = ({ card }) => {
     const params = useParams();
 
     return (
-        <li>
+        <li className='card'>
             {
                 params.term === 'photos' ? 
                     <figure>
@@ -22,7 +22,7 @@ const Card = ({ card }) => {
                     <p><strong>Name:</strong> {card.name}</p>
                     <p><strong>Email:</strong> {card.email}</p>
                 </> :
-                <h2><strong>Title:</strong> {card.title} </h2>
+                <p><strong>Title:</strong> {card.title} </p>
             }
             <Link to={`/${params.term}/${card.id}`}>Show More</Link>
         </li>  

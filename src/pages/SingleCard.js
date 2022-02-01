@@ -19,7 +19,7 @@ const SingleCard = () => {
       };
     
       return (
-        <div className="wrapper">
+        <div className="wrapper sc">
             <h2>Single {title} Card</h2>
             <div className="singleCard">
             {
@@ -37,9 +37,9 @@ const SingleCard = () => {
                     <p><strong>Name:</strong> {card.name}</p>
                     <p><strong>Email:</strong> {card.email}</p>
                 </> :
-                <h2><strong>Title:</strong> {card.title} </h2>
+                <p><strong>Title:</strong> {card.title} </p>
             }
-            { params.term !== 'albums' ? <h2><strong>Body:</strong> {card.body}</h2> : '' }
+            { params.term === "photos" ? '' : params.term === 'albums' ? '' : <p><strong>Body:</strong> {card.body}</p> }
               <button onClick={() => navigate(-1)}>Go Back</button>
             </div>  
         </div>
